@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  min-height: 100vh;
+}
+
+.header {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: #fff;
+  padding: 64px 24px 48px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+.header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin: 40px 0 16px;
+  color: #0f172a;
+}
+
+h2:first-child {
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.7;
+}
+
+pre {
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 20px;
+  border-radius: 12px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+code {
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+  font-size: 0.9rem;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background: #f1f5f9;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+td {
+  color: #475569;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.badge {
+  display: inline-block;
+  background: #25d366;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.footer {
+  text-align: center;
+  padding: 32px 24px;
+  color: #94a3b8;
+  font-size: 0.85rem;
+}

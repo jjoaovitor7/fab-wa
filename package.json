@@ -1,0 +1,41 @@
+{
+  "name": "fab-wa",
+  "version": "1.0.0",
+  "description": "Unofficial WhatsApp FAB",
+  "author": "jjoaovitor7",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjoaovitor7/fab-wa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jjoaovitor7/fab-wa/issues"
+  },
+  "homepage": "https://github.com/jjoaovitor7/fab-wa#readme",
+  "keywords": [
+    "widget",
+    "fab",
+    "chat",
+    "floating",
+    "button"
+  ],
+  "main": "dist/fab-wa.js",
+  "exports": {
+    ".": {
+      "import": "./dist/fab-wa.js",
+      "require": "./dist/fab-wa.umd.cjs"
+    }
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite --open /demo/"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.13.1"
+  },
+  "devDependencies": {
+    "vite": "^8.0.13",
+    "vite-plugin-css-injected-by-js": "^5.0.1"
+  }
+}

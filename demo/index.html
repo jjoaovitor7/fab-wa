@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fab-wa</title>
+    <link rel="stylesheet" href="demo.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>fab-wa</h1>
+      <p>Unofficial WhatsApp FAB</p>
+    </div>
+
+    <div class="container">
+      <h2>Usage</h2>
+      <pre><code>&lt;script type="module"&gt;
+  import FabWa from "./dist/fab-wa.js";
+  FabWa.init({
+    phone: "5579999999999",
+    name: "My Site",
+    message: "Hi!",
+    buttonText: "Start chat",
+    primaryColor: "#25D366"
+  });
+&lt;/script&gt;</code></pre>
+
+      <h2>Options</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Option</th>
+            <th>Type</th>
+            <th>Default</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>phone</code></td>
+            <td>string</td>
+            <td><span class="badge">required</span></td>
+            <td>WhatsApp phone number</td>
+          </tr>
+          <tr>
+            <td><code>name</code></td>
+            <td>string</td>
+            <td><span class="badge">required</span></td>
+            <td>Name in chat header</td>
+          </tr>
+          <tr>
+            <td><code>logo</code></td>
+            <td>string</td>
+            <td><code>""</code></td>
+            <td>Avatar image URL (fallback: <code>bi-person</code>)</td>
+          </tr>
+          <tr>
+            <td><code>message</code></td>
+            <td>string</td>
+            <td><code>"Hi!"</code></td>
+            <td>Pre-filled message</td>
+          </tr>
+          <tr>
+            <td><code>buttonText</code></td>
+            <td>string</td>
+            <td><span class="badge">required</span></td>
+            <td>Send button text</td>
+          </tr>
+          <tr>
+            <td><code>fabIcon</code></td>
+            <td>string</td>
+            <td><code>"bi bi-whatsapp"</code></td>
+            <td>Bootstrap Icons class or image URL</td>
+          </tr>
+          <tr>
+            <td><code>primaryColor</code></td>
+            <td>string</td>
+            <td><code>"#25D366"</code></td>
+            <td>Primary color</td>
+          </tr>
+          <tr>
+            <td><code>darkColor</code></td>
+            <td>string</td>
+            <td><code>"#128C7E"</code></td>
+            <td>Dark color (gradient)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Example</h2>
+      <p>
+        The button at the bottom-right is the FAB running live. Configure with:
+      </p>
+      <pre><code>FabWa.init({
+  phone: "5579999999999",
+  name: "fab-wa",
+  message: "Hi!",
+  buttonText: "Start chat",
+  fabIcon: "bi bi-whatsapp",
+  primaryColor: "#25D366"
+});</code></pre>
+    </div>
+
+    <div class="footer">fab-wa &mdash; MIT License</div>
+
+    <script type="module">
+      import FabWa from "../dist/fab-wa.js";
+
+      FabWa.init({
+        phone: "5579999999999",
+        name: "fab-wa",
+        message: "Hi!",
+        buttonText: "Start chat",
+        fabIcon: "bi bi-whatsapp",
+        primaryColor: "#25D366",
+      });
+    </script>
+  </body>
+</html>
