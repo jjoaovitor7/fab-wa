@@ -6,13 +6,15 @@
 
 ---
 
+[![fab-wa](https://nodei.co/npm/fab-wa.png)](https://nodei.co/npm/fab-wa/)
+
 ## Usage
 ```bash
 pnpm i fab-wa  # or: npm i fab-wa
 ```
 ```html
 <script type="module">
-  import FabWa from "fab-wa";
+  import FabWa from "https://cdn.jsdelivr.net/npm/fab-wa@latest";
   FabWa.init({
     phone: "5579999999999",
     name: "My Site",
