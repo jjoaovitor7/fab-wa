@@ -20,6 +20,7 @@ pnpm i fab-wa  # or: npm i fab-wa
     name: "My Site",
     message: "Hi! I'd like to know more.",
     buttonText: "Start chat",
+    greeting: "Chat with us on WhatsApp",
     fabIcon: "bi bi-whatsapp",
     primaryColor: "#25D366"
   });
@@ -30,10 +31,11 @@ pnpm i fab-wa  # or: npm i fab-wa
 | Option         | Type     | Default            | Description                              |
 |----------------|----------|--------------------|------------------------------------------|
 | `phone`        | `string` | -                  | WhatsApp phone number (required)         |
-| `name`         | `string` | —                  | Name in chat header (required)           |
+| `name`         | `string` | -                  | Name in chat header (required)           |
 | `logo`         | `string` | `""`               | Avatar image URL (fallback: `bi-person`) |
 | `message`      | `string` | `"Hi!"`            | Pre-filled message                       |
-| `buttonText`   | `string` | —                  | Send button text (required)              |
+| `buttonText`   | `string` | -                  | Send button text (required)              |
+| `greeting`     | `string` | -                  | Text in the chat bubble (required)       |
 | `fabIcon`      | `string` | `"bi bi-whatsapp"` | Bootstrap Icons class or image URL       |
 | `primaryColor` | `string` | `"#25D366"`      | Primary color                            |
 | `darkColor`    | `string` | `"#128C7E"`      | Dark color (gradient)                    |

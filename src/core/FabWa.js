@@ -11,6 +11,7 @@ export default class FabWa {
 
       message: options.message || "Hi!",
       buttonText: options.buttonText,
+      greeting: options.greeting,
 
       fabIcon: options.fabIcon || "bi bi-whatsapp",
 
@@ -75,7 +76,7 @@ export default class FabWa {
 
         <div class="fab-body">
           <div class="fab-bubble">
-            👋 Chat with us on WhatsApp
+            ${this.config.greeting}
           </div>
         </div>
 
