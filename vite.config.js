@@ -8,9 +8,16 @@ export default defineConfig({
       entry: "src/index.js",
       name: "FabWa",
       fileName: "fab-wa",
-      formats: ["es", "umd"]
+      formats: ["es", "cjs"]
     },
+    target: "es2020",
     cssCodeSplit: false,
-    emptyOutDir: false
+    emptyOutDir: true,
+    reportCompressedSize: true,
+    rollupOptions: {
+      output: {
+        exports: "named"
+      }
+    }
   }
 });

@@ -24,7 +24,7 @@
   "exports": {
     ".": {
       "import": "./dist/fab-wa.js",
-      "require": "./dist/fab-wa.umd.cjs"
+      "require": "./dist/fab-wa.cjs"
     }
   },
   "scripts": {
