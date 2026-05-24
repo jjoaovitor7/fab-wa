@@ -1,6 +1,6 @@
 {
   "name": "fab-wa",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Unofficial WhatsApp FAB",
   "author": "jjoaovitor7",
   "type": "module",
@@ -16,11 +16,11 @@
   "keywords": [
     "widget",
     "fab",
-    "chat",
-    "floating",
-    "button"
+    "fab-wa",
+    "floating-action-button"
   ],
   "main": "dist/fab-wa.js",
+  "types": "types.d.ts",
   "exports": {
     ".": {
       "import": "./dist/fab-wa.js",

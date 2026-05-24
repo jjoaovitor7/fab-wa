@@ -1,2 +1,3 @@
-import FabWa from "./core/FabWa.js";
+import "./FabWaElement.js";
+import FabWa from "./FabWa.js";
 export default FabWa;
